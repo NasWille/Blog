@@ -5,6 +5,7 @@
     --text-color: #5C9DEB;
     --text-color-hover: #55b5db;
     --font-size: 1.5rem;
+    --background-color: rgb(37, 48, 68);
 }
 
 * 
@@ -16,5 +17,5 @@
 
 body
 {
-  background: rgb(37, 48, 68);
+  background: var(--background-color);
 }

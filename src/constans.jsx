@@ -9,30 +9,35 @@ export const TEXTS = {
 
 export const POSTS = [
     {
+        id: 4,
         title: "We're so small...",
         description: TEXTS.loremIpsum,
         image: 'pexels-janik-butz-5366526.jpg', //Janik Butz: https://www.pexels.com/pl-pl/zdjecie/zbiornik-wodny-w-poblizu-gory-pod-rozgwiezdzona-noca-5366526/
         author: 'Nick'  
     },
     {
+        id: 3,
         title: "An early bird",
         description: TEXTS.loremIpsum,
         image: 'pexels-cmonphotography-1809644.jpg', //cmonphotography: https://www.pexels.com/pl-pl/zdjecie/sylwetka-gor-o-swicie-1809644/
         author: 'Nick'  
     },
     {
+        id: 2,
         title: "A remnant of the past",
         description: TEXTS.loremIpsum,
         image: 'pexels-peter-spencer-663487.jpg', //Peter Spencer: https://www.pexels.com/pl-pl/zdjecie/zielone-pole-i-bialo-czarna-konstrukcja-betonowa-podczas-zachodu-slonca-663487/
         author: 'Nick'  
     },
     {
+        id: 1,
         title: "Concrete jungle",
         description: TEXTS.loremIpsum,
         image: 'pexels-pixabay-220444.jpg',  //Pixabay: https://www.pexels.com/pl-pl/zdjecie/architektura-budynki-drapacze-chmur-mezczyzna-220444/
         author: 'Nick'  
     },
     {
+        id: 0,
         title: "Relaxing by the lake",
         description: TEXTS.loremIpsum,
         image: 'pexels-ezra-comeau-2387661.jpg', //Ezra Comeau: https://www.pexels.com/pl-pl/zdjecie/biale-platki-kwiaty-2387661/

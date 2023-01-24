@@ -1,0 +1,78 @@
+.modal-overlay
+{
+    background: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: var(--text-color);
+}
+
+.modal-overlay .modal
+{
+    background: var(--background-color);
+    width: 700px;
+    height: 630px;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-overlay .modal button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background: var(--background-color);
+    width: 50px;
+    height: 25px;
+    color: var(--text-color);
+    border: 0px;
+    border-bottom-left-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.modal-overlay .modal button:hover
+{
+    background: rgb(41, 58, 90);
+}
+
+.modal-overlay .modal .image
+{
+    width: 100%;
+}
+
+.modal-overlay .modal .image img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    filter: brightness(90%);
+    box-shadow: rgba(0, 0, 0, 0.74) 0px 0px 20px;
+}
+
+.modal-overlay .modal .information
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-overlay .modal .information h1
+{
+    font-size: 2rem;
+}
+
+.modal-overlay .modal .information p
+{
+    color: var(--text-color-hover);
+}
