@@ -7,17 +7,15 @@ const EditPost = ({ changeEditMode }) => {
   const { data, functions } = useGlobalContext();
 
   const getDescription = (odlDescription) => {
-    console.log(odlDescription)
+    console.log(odlDescription);
     let text = odlDescription.split(TEXTS.newLineSymbol);
-    text = text.join('\n');
+    text = text.join("\n");
     return text;
-  }
+  };
 
-  const [title, setTitle] = useState( data.selectedPost.title );
-  const [description, setDescription] = useState( data.selectedPost.description );
-  const [photoPath, setPhotoPath] = useState( data.selectedPost.image );
-
-  
+  const [title, setTitle] = useState(data.selectedPost.title);
+  const [description, setDescription] = useState(data.selectedPost.description);
+  const [photoPath, setPhotoPath] = useState(data.selectedPost.image);
 
   const handleChangeTitle = (event) => {
     setTitle(event.target.value);
@@ -27,7 +25,7 @@ const EditPost = ({ changeEditMode }) => {
     let text = event.target.value;
 
     setDescription(text);
-    let lines = text.split('\n');
+    let lines = text.split("\n");
     console.log(lines);
     text = lines.join(TEXTS.newLineSymbol);
     setDescription(text);
@@ -55,19 +53,25 @@ const EditPost = ({ changeEditMode }) => {
     changeEditMode();
   };
 
-
   return (
     <form className="edit-post">
       <label>Title:</label>
       <input type={"text"} value={title} onChange={handleChangeTitle} />
       <label>Description:</label>
-      <textarea onChange={handleChangeDecription} value={getDescription(description)} />
+      <textarea
+        onChange={handleChangeDecription}
+        value={getDescription(description)}
+      />
       <label>Path to photo:</label>
       <input type={"text"} onChange={handleChangePhotoPath} value={photoPath} />
 
       <div className="buttons">
-        <button type="button" onClick={handleEditPost}>Edit</button>
-        <button type="button" onClick={changeEditMode}>Cancel</button>
+        <button type="button" onClick={handleEditPost}>
+          Edit
+        </button>
+        <button type="button" onClick={changeEditMode}>
+          Cancel
+        </button>
       </div>
     </form>
   );
