@@ -9,7 +9,6 @@ nav
 {
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0));
-    color: var(--text-color);
     display: flex;
     font-family: 'Lato', sans-serif;
     font-size: var(--font-size);
@@ -35,7 +34,15 @@ nav li
     cursor: pointer;
 }
 
-nav li:hover 
+nav li .link,
+nav li
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav li .link:hover,
+nav li:hover
 {
     color: var(--text-color-hover);
     text-shadow: 1px 1px 20px;

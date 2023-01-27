@@ -1,13 +1,19 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Contents from './components/Contents/Contents';
+import Contents from './Pages/Contents'
+import NewPost from './Pages/NewPost';
 
 function App() {
   return (
-    <main>
-      <Navbar />
-      <Contents />
-    </main>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Contents/>} />
+        <Route path='/newpost' element={<NewPost />}/>
+      </Routes>
+    </Router>
+    
   );
 }
 

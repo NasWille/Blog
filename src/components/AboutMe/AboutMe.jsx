@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
-import { TEXTS } from '../../../constans';
-import { useGlobalContext } from '../../../context';
+import { TEXTS } from '../../constans';
 
 const AboutMe = () => {
     return (

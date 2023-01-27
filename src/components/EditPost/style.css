@@ -1,0 +1,56 @@
+.edit-post .buttons
+{
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.edit-post .buttons button
+{
+    position: block;
+    user-select: none;
+    border-radius: 2px;
+    width: 5rem;
+    height: 2.2rem;
+    background: var(--background-color);
+    color: var(--text-color-hover);
+    border: 1px var(--text-color-hover) solid;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.edit-post textarea
+{
+    resize: none;
+    min-height: 250px;
+}
+
+.edit-post button:hover
+{
+    background: rgb(41, 58, 90);
+}
+
+.edit-post 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 40px;
+}
+
+.edit-post input[type='text'],
+.edit-post textarea
+{
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px;
+    outline: 1px solid var(--text-color-hover);
+    box-shadow: inset  -5px -5px 27px -16px #000;
+    color: var(--text-color-hover);
+    border: 0px;
+    max-width: 100%;
+    min-width: 100%;
+    background: var(--background-color);
+}
+
