@@ -27,7 +27,6 @@ export const AppProvider = ({ children }) => {
   const deletePost = () => {
     const id = selectedPost.id;
     const newPosts = posts.filter((post) => id !== post.id);
-    console.log(newPosts);
     setPosts(newPosts);
     setSelectedPost(null);
   };

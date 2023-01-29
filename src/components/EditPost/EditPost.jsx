@@ -6,16 +6,15 @@ import "./style.css";
 const EditPost = ({ changeEditMode }) => {
   const { data, functions } = useGlobalContext();
 
+  const [title, setTitle] = useState(data.selectedPost.title);
+  const [description, setDescription] = useState(data.selectedPost.description);
+  const [photoPath, setPhotoPath] = useState(data.selectedPost.image);
+
   const getDescription = (odlDescription) => {
-    console.log(odlDescription);
     let text = odlDescription.split(TEXTS.newLineSymbol);
     text = text.join("\n");
     return text;
   };
-
-  const [title, setTitle] = useState(data.selectedPost.title);
-  const [description, setDescription] = useState(data.selectedPost.description);
-  const [photoPath, setPhotoPath] = useState(data.selectedPost.image);
 
   const handleChangeTitle = (event) => {
     setTitle(event.target.value);
@@ -26,7 +25,6 @@ const EditPost = ({ changeEditMode }) => {
 
     setDescription(text);
     let lines = text.split("\n");
-    console.log(lines);
     text = lines.join(TEXTS.newLineSymbol);
     setDescription(text);
   };
