@@ -1,7 +1,6 @@
 :root {
   --font-size: 1.5rem;
 }
-
 nav {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0));
@@ -16,27 +15,33 @@ nav {
   width: 100%;
   z-index: 1;
 }
-
 nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
 }
-
 nav li {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-
 nav li .link,
 nav li {
-  transition: all 0.2s ease;
-  text-decoration: none;
   color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
-
 nav li .link:hover,
 nav li:hover {
   color: var(--text-color-hover);
   text-shadow: 1px 1px 20px;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 350px) {
+  nav {
+    font-size: 13px;
+  }
 }
