@@ -10,6 +10,6 @@ The writer can create, edit, remove and view his posts. There is no backend. The
 
 Project is created with:
 
-- React (including `react-router-dom`)
-- JavaScript v18.x (ES6)
+- React v18.x (including `react-router-dom`)
+- JavaScript (ES6)
 - CSS
